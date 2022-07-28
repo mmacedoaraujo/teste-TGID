@@ -1,16 +1,16 @@
 package model.entities;
 
-public class Cliente {
+public class Usuario {
 
 	private String nome;
 	private String email;
 	private String cpf;
 
-	public Cliente() {
+	public Usuario() {
 
 	}
 
-	public Cliente(String name, String email, String cpf) {
+	public Usuario(String name, String email, String cpf) {
 		this.nome = name;
 		this.email = email;
 		this.cpf = cpf;

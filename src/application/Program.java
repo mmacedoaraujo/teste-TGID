@@ -2,7 +2,7 @@ package application;
 
 import java.util.Calendar;
 
-import model.entities.Cliente;
+import model.entities.Usuario;
 import model.entities.ItemVenda;
 import model.entities.Produto;
 import model.entities.Venda;
@@ -15,7 +15,7 @@ public class Program {
 
 		Calendar cal = Calendar.getInstance();
 
-		Venda venda = new Venda(cal.getTime(), new Cliente("Marcos Macêdo", "marcos@gmail.com", "010.020.030-00"),
+		Venda venda = new Venda(cal.getTime(), new Usuario("Marcos Macêdo", "marcos@gmail.com", "010.020.030-00"),
 				StatusCompra.PROCESSANDO);
 
 		venda.addItem(new ItemVenda(new Produto("TV", 2379.89, 1, Categorias.ELETRÔNICOS)));
@@ -24,7 +24,7 @@ public class Program {
 		System.out.println(venda);
 
 		Venda venda2 = new Venda(cal.getTime(),
-				new Cliente("Alessandra Vitória", "alessandra@gmail.com", "100.200.300-00"),
+				new Usuario("Alessandra Vitória", "alessandra@gmail.com", "100.200.300-00"),
 				StatusCompra.PAGAMENTO_PENDENTE);
 
 		venda2.addItem(new ItemVenda(new Produto("Secador", 79.19, 1, Categorias.BELEZA_E_PERFUMARIA)));
